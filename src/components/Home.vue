@@ -1,6 +1,8 @@
 <template>
     <div class="home">
-        <preloader />
+        <transition name="fade">
+            <preloader />
+        </transition>
         <nav>
             <div class="logo">
                 <a href="/">
@@ -48,15 +50,19 @@
             </div>
         </div>
         <quotes />
+
+        <credits />
     </div>
 </template>
 
 <script>
+import Credits from "./credits.vue";
 import Preloader from "./preloader.vue";
 import quotes from "./quotes.vue";
+
 export default {
     name: "Home",
-    components: { quotes, Preloader },
+    components: { quotes, Preloader, Credits },
     data() {
         return {
             sidebarOpen: false,
@@ -75,6 +81,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 $font-color: rgb(255, 199, 45);
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 
 .home {
     padding: 5vh 8vw;
