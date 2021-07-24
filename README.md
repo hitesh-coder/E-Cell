@@ -1,7 +1,7 @@
 <h1 align="center">E-CELL Challenge</h1>
 
 <div align="center">
-   Solution for the challenge is on  <a href="https://hitesh-e-cell-website.netlify.app" target="_blank">CLICK ME!!!</a>.
+   Solution for the challenge is on  <a href="https://hitesh-e-cell-website.netlify.app" target="blank">CLICK ME!!!</a>.
 </div>
 
 ## Overview
