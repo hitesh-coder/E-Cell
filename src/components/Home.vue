@@ -310,7 +310,7 @@ nav {
             z-index: 11;
         }
         .navbar {
-            position: absolute;
+            position: fixed;
             width: 100vw;
             height: 100vh;
             background: black;
